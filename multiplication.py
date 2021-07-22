@@ -17,18 +17,10 @@ if colsA != rowsB:
 else:
     print("\n\n")
     for row in range(0, rowsA):
-        '''print("n = ", row, end="  ")'''
         for col in range(0, colsB):
-            '''print("q = ", col, end="  ")'''
             C[row][col] = 0
             for prod in range(0, colsA):
-                '''print("m = ", prod, end="  ")'''
                 C[row][col] += A[row][prod]*B[prod][col]
-                '''print("C[",row+1,"][",col+1,"]=", C[row][col], end = "     ")'''
-            '''print()'''
-        '''print()'''
-    '''print()'''
-
 for row in C:
     for col in row:
         print(col, end="\t")
