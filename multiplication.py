@@ -21,7 +21,23 @@ else:
             C[row][col] = 0
             for prod in range(0, colsA):
                 C[row][col] += A[row][prod]*B[prod][col]
+print("Matrix A")
+for row in A:
+    for col in row:
+        print(col, end="\t")
+    print()
+print()
+
+print("Matrix B")
+for row in B:
+    for col in row:
+        print(col, end="\t")
+    print()
+print()
+
+print("Product (AB)")
 for row in C:
     for col in row:
         print(col, end="\t")
     print()
+print()
